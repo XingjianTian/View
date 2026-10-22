@@ -9,6 +9,24 @@
 
 它适合常开的小主机，也适合想随时看一眼自己的服务有没有正常工作的你。
 
+## 界面预览
+
+以下画面使用真实界面组件和离线演示数据，不展示个人服务记录、地址或凭据。
+
+![四宫格：业务状态与日志并排呈现](docs/assets/screenshots/grid2x2.png)
+
+<p align="center"><img src="docs/assets/screenshots/ascii-touch.gif" alt="ASCII 双手接近、触碰并消散的完整循环" width="960"></p>
+<p align="center"><sub>ASCII 背景完整循环 · GIF 经过压缩，App 中的动效由 Canvas 连续渲染。</sub></p>
+
+<details>
+<summary><strong>四列与一大三小</strong></summary>
+
+![四列布局：各服务独立切换业务与日志](docs/assets/screenshots/columns4.png)
+
+![一大三小：聚焦一个服务，同时保留其他服务摘要](docs/assets/screenshots/focus.png)
+
+</details>
+
 ## 一眼看清，按需展开
 
 - **四个可替换槽位**：四列、四宫格、一大三小，在系统「视图」菜单切换。
