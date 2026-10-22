@@ -1,0 +1,3 @@
+#!/bin/sh
+node_path=$(git config --local --get view.nodePath) || exit 1
+exec "$node_path" scripts/privacy-check.mjs --commit-message "$1"

@@ -1,0 +1,54 @@
+{
+  "name": "service-observatory",
+  "version": "0.1.0",
+  "description": "本机与 NAS Docker 只读服务观察台",
+  "private": true,
+  "main": "dist/main/index.cjs",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --config vitest.config.ts",
+    "test:electron": "playwright test --config=playwright.config.ts",
+    "prepackage": "npm run build",
+    "package": "electron-forge package",
+    "verify:package": "node scripts/verify-package.mjs",
+    "clean": "node -e \"import('node:fs').then(({rmSync})=>rmSync('dist',{recursive:true,force:true}))\"",
+    "privacy:check": "node scripts/privacy-check.mjs --staged",
+    "privacy:tracked": "node scripts/privacy-check.mjs --tracked",
+    "hooks:install": "node scripts/install-git-hooks.mjs"
+  },
+  "engines": {
+    "node": "24.22.0",
+    "npm": ">=11.6.0 <12"
+  },
+  "dependencies": {
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "ssh2": "1.17.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "8.0.1",
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "@types/pg": "8.15.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/ssh2": "1.15.6",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "44.9.1",
+    "esbuild": "0.28.2",
+    "playwright": "1.64.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  },
+  "allowScripts": {
+    "cpu-features@0.0.10": true,
+    "esbuild@0.28.2": true,
+    "ssh2@1.17.0": true,
+    "fsevents@2.3.3": true
+  }
+}
