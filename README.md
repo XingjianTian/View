@@ -13,8 +13,6 @@
 
 以下画面使用真实界面组件和离线演示数据，不展示个人服务记录、地址或凭据。
 
-![四宫格：业务状态与日志并排呈现](docs/assets/screenshots/grid2x2.png)
-
 <p align="center"><img src="docs/assets/screenshots/ascii-touch.gif" alt="ASCII 双手接近、触碰并消散的完整循环" width="960"></p>
 <p align="center"><sub>ASCII 背景完整循环 · GIF 经过压缩，App 中的动效由 Canvas 连续渲染。</sub></p>
 
